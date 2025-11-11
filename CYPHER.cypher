@@ -84,6 +84,11 @@ DETACH DELETE c;
 
 // data folder: % C:\Users\you\.Neo4jDesktop\relate-data\dbmss\dbms-048f0e3c-c8ee-44b4-bf50-101921c9b12e\import
 
+// Medals
+MATCH (n)-[r]->(m)
+RETURN n, r, m
+LIMIT 100;
+
 
 // remove all
 match (node) detach delete node
